@@ -11,30 +11,6 @@
 		bootargs = "console=ttyS0,115200  ROOT=/dev/mtdblock5";
 	};
 
-	leds {
-		compatible = "gpio-leds";
-
-		sys_yellow {
-			label = "power_2";
-			gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
-		};
-
-		sys_blue {
-			label = "power";
-			gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;
-		};
-
-		net_yellow {
-			label = "wan_2";
-			gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
-		};
-
-		net_blue {
-			label = "wan";
-			gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
-		};
-	};
-
 	gpio-keys-polled {
 		compatible = "gpio-keys-polled";
 		#address-cells = <1>;
@@ -43,13 +19,13 @@
 
 		reset {
 			label = "reset";
-			gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio0 18 0>;
 			linux,code = <KEY_RESTART>;
 		};
 
 		wps {
 			label = "wps";
-			gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio0 7 0>;
 			linux,code = <KEY_WPS_BUTTON>;
 		};
 	};
