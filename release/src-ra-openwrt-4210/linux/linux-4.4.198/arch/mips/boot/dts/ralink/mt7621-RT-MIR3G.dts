@@ -23,6 +23,16 @@
 			linux,code = <KEY_RESTART>;
 		};
 	};
+
+	reg_usb_vbus: regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "usb_vbus";
+		regulator-min-microvolt = <5000000>;
+		regulator-max-microvolt = <5000000>;
+		gpio = <&gpio0 12 1>;
+		enable-active-high;
+	};
+
 };
 
 &bch {
@@ -69,7 +79,7 @@
         mediatek,mdio = <&mdio>;
         mediatek,portmap = "llllw";
         mediatek,mcm;
-		mt7530,direct-phy-access;
+	mt7530,direct-phy-access;
 
         resets = <&rstctrl 2>;
         reset-names = "mcm";
@@ -150,6 +160,13 @@
 	status = "okay";
 };
 
+&u3phy1 {
+	status = "okay";
+};
+
+&xhci {
+	status = "okay";
+};
 
 &nand {
 	status = "okay";
@@ -187,7 +204,7 @@
 				reg = <0x180000 0x40000>;
 			};
 
-			partition@600000 {
+			partition@200000 {
 				label = "Kernel";
 				reg = <0x200000 0x2800000>;
 			};
@@ -199,3 +216,4 @@
 		};
 	};
 };
+
