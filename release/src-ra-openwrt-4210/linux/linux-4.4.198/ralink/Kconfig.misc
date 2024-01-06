@@ -76,6 +76,10 @@ config  MODEL_RTHAR
         bool "RT-HAR"
         default n
 
+config  MODEL_RTGAX1800
+        bool "RT-GAX1800"
+        default n
+
 config  MODEL_RTCR660X
         bool "RT-CR660X"
         default n
