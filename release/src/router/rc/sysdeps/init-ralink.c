@@ -147,7 +147,7 @@ void generate_switch_para(void)
 		case MODEL_RTAX18T:
 		case MODEL_RTHAR:
 		case MODEL_RTGAX1800:
-		case MODEL-RTT6M:
+		case MODEL_RTT6M:
 		case MODEL_R6800:
 		case MODEL_TUFAC1750:
 		case MODEL_RTAX53U:
