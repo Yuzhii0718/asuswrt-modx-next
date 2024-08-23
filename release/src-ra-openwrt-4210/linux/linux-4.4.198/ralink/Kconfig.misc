@@ -76,6 +76,10 @@ config  MODEL_RTGAX1800
         bool "RT-GAX1800"
         default n
 
+config  MODEL_RTGAX1800B
+	bool "RT-GAX1800B"
+	default n 
+
 config MODEL_RTT6M
        bool "RT-T6M"
        default n

@@ -1699,6 +1699,7 @@ misc_defaults(int restore_defaults)
 		case MODEL_RTAX18T:
 		case MODEL_RTHAR:
 		case MODEL_RTGAX1800:
+		case MODEL_RTGAX1800B:
 		case MODEL_RTT6M:
 		case MODEL_RTCR660X:
 			nvram_set("reboot_time", "90");		// default is 70 sec
