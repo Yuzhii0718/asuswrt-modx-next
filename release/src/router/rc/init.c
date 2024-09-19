@@ -1742,6 +1742,7 @@ misc_defaults(int restore_defaults)
 		case MODEL_RTGAX1800:
 		case MODEL_RTGAX1800B:
 		case MODEL_RTT6M:
+		case MODEL_RTXG1:
 		case MODEL_XMCR660X:
 		case MODEL_RTCR660X:
 		case MODEL_JCGQ20:
