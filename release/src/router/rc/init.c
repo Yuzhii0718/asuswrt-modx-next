@@ -5141,8 +5141,8 @@ int init_nvram(void)
 
 		nvram_set_int("btn_rst_gpio",  16|GPIO_ACTIVE_LOW);
 		nvram_set_int("btn_wps_gpio",  18|GPIO_ACTIVE_LOW);
-		nvram_set_int("led_pwr_gpio",  7|GPIO_ACTIVE_LOW);
-		nvram_set_int("led_wan_gpio", 8|GPIO_ACTIVE_LOW);
+		nvram_set_int("led_pwr_gpio",  17|GPIO_ACTIVE_LOW);
+		nvram_set_int("led_wan_gpio", 13|GPIO_ACTIVE_LOW);
 
 		nvram_set("ehci_ports", "");
 		nvram_set("ohci_ports", "");
