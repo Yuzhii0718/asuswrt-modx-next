@@ -205,6 +205,7 @@ extern int PS_pclose(FILE *);
 #define SW_IPTV_BRIDGE_VID		(960)		/* 3 ~ 4095 */
 
 /* btn_XXX_gpio, led_XXX_gpio */
+#define GPIO_ACTIVE_HIGH 0x0000
 #define GPIO_ACTIVE_LOW 0x1000
 #define GPIO_BLINK_LED	0x2000
 #define GPIO_PIN_MASK	0x00FF
