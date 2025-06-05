@@ -284,6 +284,8 @@ void swrt_init_pre()
 		nvram_set("modelname", "RTGAX1800");
 #elif defined(RTGAX1800B)
 		nvram_set("modelname", "RTGAX1800B");
+#elif defined(RTGAX1800F)
+		nvram_set("modelname", "RTGAX1800F");
 #elif defined(RTRX6000)
 		nvram_set("modelname", "RTRX6000");
 #elif defined(RTKOMIA8)
