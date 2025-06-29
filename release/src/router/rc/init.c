@@ -27,6 +27,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <net/ethernet.h>
+#define GPIO_ACTIVE_HIGH 0x1
 #ifdef LINUX26
 #if defined(RTCONFIG_HND_ROUTER_AX_6756) || defined(RTCONFIG_MT798X)
 #include <sys/sysmacros.h>
@@ -5143,7 +5144,7 @@ int init_nvram(void)
 		nvram_set_int("btn_rst_gpio",  7|GPIO_ACTIVE_HIGH);
 		nvram_set_int("btn_wps_gpio",  6|GPIO_ACTIVE_HIGH);
 		nvram_set_int("led_pwr_gpio",  13|GPIO_ACTIVE_HIGH);
-		nvram_set_int("led_wan_gpio", 15|GPIO_ACTIVE_HIGH);
+		nvram_set_int("led_wan_gpio",  15|GPIO_ACTIVE_HIGH);
 
 		nvram_set("ehci_ports", "");
 		nvram_set("ohci_ports", "");
